@@ -1,4 +1,8 @@
 import { createStore } from 'vuex'
+import auth from './auth'
+import files from './files'
+import usage from './usage'
+import snack from './snack'
 
 export default createStore({
   state: {
@@ -8,5 +12,9 @@ export default createStore({
   actions: {
   },
   modules: {
+      auth,
+      files,
+      usage,
+      snack
   }
 })
